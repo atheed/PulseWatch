@@ -34,7 +34,9 @@ import com.microsoft.band.sensors.BandHeartRateEventListener;
 import com.microsoft.band.sensors.HeartRateConsentListener;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.provider.Settings;
 import android.view.View;
 import android.app.Activity;
@@ -67,10 +69,25 @@ public class BandHeartRateAppActivity extends Activity {
         public void onBandHeartRateChanged(final BandHeartRateEvent event) {
             if (event != null) {
                 if (sent == 0) {
-                    appendToUI(String.format("Heart Rate = %d beats per minute\n"
-                            + "Quality = %s\n", event.getHeartRate(), event.getQuality()));
+                    appendToUI(String.format("             %d", event.getHeartRate()));
                 }
-                if (event.getHeartRate() > 60) {
+
+                SharedPreferences preferences =
+                        PreferenceManager.getDefaultSharedPreferences(BandHeartRateAppActivity.this);
+                String username = preferences.getString("name", "Atheed Thameem");
+
+                int lower = Integer.parseInt(preferences.getString("lower", "60"));
+                int upper = Integer.parseInt(preferences.getString("upper", "120"));
+
+                String contact1 = preferences.getString("contact1", "DEFAULT");
+                String contact2 = preferences.getString("contact2", "DEFAULT");
+                String contact3 = preferences.getString("contact3", "DEFAULT");
+                String contact4 = preferences.getString("contact4", "DEFAULT");
+                String contact5 = preferences.getString("contact5", "DEFAULT");
+
+                String allContacts = contact1 + "," + contact2 + "," + contact3 + "," + contact4 + "," + contact5;
+
+                if (event.getHeartRate() < lower || event.getHeartRate() > upper) {
 
                     if (sent == 0) {
                         try {
@@ -80,7 +97,9 @@ public class BandHeartRateAppActivity extends Activity {
 
                             // Add your data
                             List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
-                            nameValuePairs.add(new BasicNameValuePair("name", "Atheed"));
+                            nameValuePairs.add(new BasicNameValuePair("name", username));
+                            nameValuePairs.add(new BasicNameValuePair("numbers", allContacts));
+                            nameValuePairs.add(new BasicNameValuePair("heartrate", Integer.toString(event.getHeartRate())));
                             // create class object
                             gps = new GPSTracker(BandHeartRateAppActivity.this);
 

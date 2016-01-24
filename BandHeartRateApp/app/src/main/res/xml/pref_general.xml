@@ -1,22 +1,107 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <SwitchPreference
-        android:defaultValue="true"
-        android:key="example_switch"
-        android:summary="@string/pref_description_social_recommendations"
-        android:title="@string/pref_title_social_recommendations" />
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="@string/pref_name_default"
+        android:inputType="textCapWords"
+        android:key="name"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_name" />
+
 
     <!-- NOTE: EditTextPreference accepts EditText attributes. -->
     <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
     <EditTextPreference
         android:capitalize="words"
-        android:defaultValue="@string/pref_default_display_name"
-        android:inputType="textCapWords"
-        android:key="example_text"
+        android:defaultValue="@string/pref_number_default"
+        android:inputType="phone"
+        android:key="number"
         android:maxLines="1"
         android:selectAllOnFocus="true"
         android:singleLine="true"
-        android:title="@string/pref_title_display_name" />
+        android:title="@string/pref_number" />
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="@string/pref_lower_default"
+        android:inputType="number"
+        android:key="lower"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_lower" />
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="@string/pref_upper_default"
+        android:inputType="number"
+        android:key="upper"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_upper" />
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="@string/pref_contact1_default"
+        android:inputType="phone"
+        android:key="contact1"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_contact1" />
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="@string/pref_contact2_default"
+        android:inputType="phone"
+        android:key="contact2"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_contact2" />
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="@string/pref_contact3_default"
+        android:inputType="phone"
+        android:key="contact3"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_contact3" />
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="@string/pref_contact4_default"
+        android:inputType="phone"
+        android:key="contact4"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_contact4" />
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="@string/pref_contact5_default"
+        android:inputType="phone"
+        android:key="contact5"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_contact5" />
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="@string/pref_interval_default"
+        android:inputType="number"
+        android:key="interval"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_interval" />
 
     <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
          dismiss it. -->

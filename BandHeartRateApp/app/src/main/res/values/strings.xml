@@ -27,8 +27,35 @@
         based on your message history
     </string>
 
-    <string name="pref_title_display_name">Display name</string>
-    <string name="pref_default_display_name">John Smith</string>
+    <string name="pref_name">Name</string>
+    <string name="pref_name_default"></string>
+
+    <string name="pref_number">Phone Number</string>
+    <string name="pref_number_default"></string>
+
+    <string name="pref_lower">Heartbeat Lower Bound</string>
+    <string name="pref_lower_default">60</string>
+
+    <string name="pref_upper">Heartbeat Upper Bound</string>
+    <string name="pref_upper_default">120</string>
+
+    <string name="pref_contact1">Emergency Contact 1</string>
+    <string name="pref_contact1_default"></string>
+
+    <string name="pref_contact2">Emergency Contact 2</string>
+    <string name="pref_contact2_default"></string>
+
+    <string name="pref_contact3">Emergency Contact 3</string>
+    <string name="pref_contact3_default"></string>
+
+    <string name="pref_contact4">Emergency Contact 4</string>
+    <string name="pref_contact4_default"></string>
+
+    <string name="pref_contact5">Emergency Contact 5</string>
+    <string name="pref_contact5_default"></string>
+
+    <string name="pref_interval">Message Interval (sec)</string>
+    <string name="pref_interval_default"></string>
 
     <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
     <string-array name="pref_example_list_titles">

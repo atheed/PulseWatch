@@ -190,8 +190,16 @@ public class SettingsActivity extends PreferenceActivity {
             // to their values. When their values change, their summaries are
             // updated to reflect the new value, per the Android Design
             // guidelines.
-            bindPreferenceSummaryToValue(findPreference("example_text"));
-            bindPreferenceSummaryToValue(findPreference("example_list"));
+            bindPreferenceSummaryToValue(findPreference("name"));
+            bindPreferenceSummaryToValue(findPreference("number"));
+            bindPreferenceSummaryToValue(findPreference("lower"));
+            bindPreferenceSummaryToValue(findPreference("upper"));
+            bindPreferenceSummaryToValue(findPreference("contact1"));
+            bindPreferenceSummaryToValue(findPreference("contact2"));
+            bindPreferenceSummaryToValue(findPreference("contact3"));
+            bindPreferenceSummaryToValue(findPreference("contact4"));
+            bindPreferenceSummaryToValue(findPreference("contact5"));
+            bindPreferenceSummaryToValue(findPreference("interval"));
         }
 
         @Override
