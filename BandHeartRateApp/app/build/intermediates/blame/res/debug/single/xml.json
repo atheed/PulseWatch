@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Users/Atheed/AndroidStudioProjects/BandHeartRateApp/app/build/intermediates/res/merged/debug/xml/pref_notification.xml",
+        "source": "/Users/Atheed/AndroidStudioProjects/BandHeartRateApp/app/src/main/res/xml/pref_notification.xml"
+    },
+    {
+        "merged": "/Users/Atheed/AndroidStudioProjects/BandHeartRateApp/app/build/intermediates/res/merged/debug/xml/pref_data_sync.xml",
+        "source": "/Users/Atheed/AndroidStudioProjects/BandHeartRateApp/app/src/main/res/xml/pref_data_sync.xml"
+    },
+    {
+        "merged": "/Users/Atheed/AndroidStudioProjects/BandHeartRateApp/app/build/intermediates/res/merged/debug/xml/pref_headers.xml",
+        "source": "/Users/Atheed/AndroidStudioProjects/BandHeartRateApp/app/src/main/res/xml/pref_headers.xml"
+    },
+    {
+        "merged": "/Users/Atheed/AndroidStudioProjects/BandHeartRateApp/app/build/intermediates/res/merged/debug/xml/pref_general.xml",
+        "source": "/Users/Atheed/AndroidStudioProjects/BandHeartRateApp/app/src/main/res/xml/pref_general.xml"
+    },
+    {
+        "merged": "/Users/Atheed/AndroidStudioProjects/BandHeartRateApp/app/build/intermediates/res/merged/debug/xml/xml.xml",
+        "source": "/Users/Atheed/AndroidStudioProjects/BandHeartRateApp/app/src/main/res/xml/xml.xml"
+    }
+]
