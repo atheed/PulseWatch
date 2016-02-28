@@ -21,7 +21,7 @@ Once the wearer installs PulseWatch and syncs it with the Microsoft Band, all th
 Below are two images of PulseWatch's UI. The first shows the landing page, with a wearer's heart rate already being monitored. The second shows the settings page, which allows the user to add emergency contacts, and define the wearer's name and the "recommended" heart rate bounds. 
 
 ### Landing Page
-<img src="/img/main.jpg" width="500px" height="283px"/>
+<img src="/img/main.jpg" width="225px" height="400px"/>
 
 ### Settings Page
-<img src="/img/settings.jpg" width="500px" height="283px"/>
+<img src="/img/settings.jpg" width="225px" height="400px"/>
