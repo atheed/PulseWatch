@@ -1,10 +1,10 @@
 # PulseWatch
 
-Aimed at the elderly and those with volatile ailments, **PulseWatch** is an Android companion for the [Microsoft Band](https://www.microsoft.com/microsoft-band/) which keeps track of the Band wearer's heart rate, in real-time. If the wearer's heart rate falls outside of the user-defined bounds, the app immediately sends a text message to an emergency list of contacts (defined by the user). The message will include the wearer's name, their heart rate at that moment, and their precise geolocation, with a Google Maps link. 
+**Placed in the Top 10 at [UofTHacks](https://uofthacks.com/)**.
+
+Aimed at the elderly and those with debilitating diseases, **PulseWatch** is an Android companion for the [Microsoft Band](https://www.microsoft.com/microsoft-band/) that keeps track of the Band wearer's heart rate, in real-time. If the wearer's heart rate falls outside of the user-defined bounds, the app immediately sends a text message to an emergency list of contacts (defined by the user). The message will include the wearer's name, their heart rate at that moment, and their precise geolocation, with a Google Maps link. 
 
 Once the wearer installs PulseWatch and syncs it with the Microsoft Band, all they need to do is hit the "Start" button on the app's landing page. Once that is done, the app is now monitoring the wearer's heart rate in real-time.
-
-**Placed in the Top 10 at [UofTHacks](https://uofthacks.com/)**.
 
 ### Built By
 - Myself ([atheed](https://github.com/atheed))
