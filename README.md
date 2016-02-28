@@ -14,7 +14,7 @@ Once the wearer installs PulseWatch and syncs it with the Microsoft Band, all th
 ### Software
 - Android SDK
 - Java
-- Python Flask (for the text-messaging server)
+- [Flask](http://flask.pocoo.org/) (for the text-messaging server)
 - [Twilio](https://www.twilio.com/) API (for text-messaging)
 
 ## UI
